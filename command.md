@@ -46,6 +46,11 @@ $ od -c -t x1 text-utf8-containing-over-bmp.txt 0000000    a   i   u   e   o  \n
 0000033
 ```
 
+latin1が符号化方式と一致することを確認
+```
+od -c -t x1 text-latin1-containing-all-latin1-characters.txt
+```
+
 # 気づいたこと
 ASCIIは符号化文字集合であり符号化方式。だけどUnicodeは符号化文字集合であり、UTF-8は符号化方式。
 
